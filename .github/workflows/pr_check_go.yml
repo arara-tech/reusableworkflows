@@ -40,7 +40,7 @@ on:
 
 jobs:
   build:
-    uses: GoGipsy/ReusableWorkflows/.github/workflows/pr_check_build_go.yml@master
+    uses: arara-tech/ReusableWorkflows/.github/workflows/pr_check_build_go.yml@main
     with:
       runs-on: ${{ inputs.runs-on }}
       go-version: ${{ inputs.go-version }}
@@ -49,7 +49,7 @@ jobs:
       private-key: ${{ secrets.private-key }}
 
   lint:
-    uses: GoGipsy/ReusableWorkflows/.github/workflows/pr_check_lint_go.yml@master
+    uses: arara-tech/ReusableWorkflows/.github/workflows/pr_check_lint_go.yml@main
     with:
       runs-on: ${{ inputs.runs-on }}
       go-version: ${{ inputs.go-version }}
@@ -59,7 +59,7 @@ jobs:
       private-key: ${{ secrets.private-key }}
 
   test:
-    uses: GoGipsy/ReusableWorkflows/.github/workflows/pr_check_test_go.yml@master
+    uses: arara-tech/ReusableWorkflows/.github/workflows/pr_check_test_go.yml@main
     with:
       runs-on: ${{ inputs.runs-on }}
       go-version: ${{ inputs.go-version }}
