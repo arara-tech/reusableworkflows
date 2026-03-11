@@ -42,7 +42,7 @@ jobs:
           gh api octocat       
       - name: Build project
         env:
-          GOPRIVATE: github.com/GoGipsy
+          GOPRIVATE: github.com/arara-tech
           GITHUB_TOKEN: ${{ steps.generate_token.outputs.token }}
           GIT_TERMINAL_PROMPT: 1
         run: |
