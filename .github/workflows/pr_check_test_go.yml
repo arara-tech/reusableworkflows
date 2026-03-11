@@ -55,7 +55,7 @@ jobs:
         run: go install github.com/vektra/mockery/v2@v2.53.2
       - name: Run tests
         env:
-          GOPRIVATE: github.com/GoGipsy
+          GOPRIVATE: github.com/arara-tech
           GITHUB_TOKEN: ${{ steps.generate_token.outputs.token }}
           GIT_TERMINAL_PROMPT: 1
         run: |

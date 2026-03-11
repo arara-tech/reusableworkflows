@@ -24,7 +24,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         with:
-          repository: 'GoGipsy/ReusableWorkflows'
+          repository: 'arara-tech/ReusableWorkflows'
       - uses: actions/download-artifact@v4
         with:
           name: ${{ inputs.content }}
