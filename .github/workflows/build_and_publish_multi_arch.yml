@@ -48,7 +48,7 @@ jobs:
     steps:
     - uses: actions/checkout@v4
       with:
-        repository: 'GoGipsy/ReusableWorkflows'
+        repository: 'arara-tech/ReusableWorkflows'
     - uses: actions/download-artifact@v4
       with:
         name: ${{ inputs.build-artifact-name }}
@@ -112,7 +112,7 @@ jobs:
     steps:
     - uses: actions/checkout@v4
       with:
-        repository: 'GoGipsy/ReusableWorkflows'
+        repository: 'arara-tech/ReusableWorkflows'
     - uses: actions/download-artifact@v4
       with:
         name: ${{ inputs.build-artifact-name }}
@@ -178,7 +178,7 @@ jobs:
     steps:
     - uses: actions/checkout@v4
       with:
-        repository: 'GoGipsy/ReusableWorkflows'
+        repository: 'arara-tech/ReusableWorkflows'
     - name: Configure AWS credentials
       id: aws-account
       uses: aws-actions/configure-aws-credentials@v4
