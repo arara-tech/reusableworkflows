@@ -44,7 +44,7 @@ on:
       
 jobs:
   build:
-    uses: arara-tech/ReusableWorkflows/.github/workflows/pr_check_build_tmp_go.yml@master
+    uses: arara-tech/ReusableWorkflows/.github/workflows/pr_check_build_tmp_go.yml@main
     with:
       runs-on: ${{ inputs.runs-on }}
       go-version: ${{ inputs.go-version }}
@@ -55,7 +55,7 @@ jobs:
 
   lint:
     needs: build
-    uses: arara-tech/ReusableWorkflows/.github/workflows/pr_check_lint_tmp_go.yml@master
+    uses: arara-tech/ReusableWorkflows/.github/workflows/pr_check_lint_tmp_go.yml@main
     with:
       runs-on: ${{ inputs.runs-on }}
       go-version: ${{ inputs.go-version }}
@@ -66,7 +66,7 @@ jobs:
 
   test:
     needs: build
-    uses: arara-tech/ReusableWorkflows/.github/workflows/pr_check_test_tmp_go.yml@master
+    uses: arara-tech/ReusableWorkflows/.github/workflows/pr_check_test_tmp_go.yml@main
     with:
       runs-on: ${{ inputs.runs-on }}
       go-version: ${{ inputs.go-version }}
